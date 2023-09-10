@@ -1,7 +1,8 @@
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+919836578565'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>9836578565</label></div> </a> <a href='mailto:debayudh.mitra@yahoo.in'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/debamitr1012'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/919836578565'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/deba10'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://www.instagram.com/deba_mitr/'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/debayudh-mitra/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
-var resumeString = "<img src='images/DebayudhMitra'sResume.png' class='DebayudhMitra'sResume'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Debayudh Mitra's Resume.pdf</label></div><a href='assets/Debayudh Mitra's Resume.pdf' download='Debayudh_Mitra_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/place/22.6635798,88.3458721,21z/data=!4m5!3m4!1s0x39f89ce1200b3aaf:0x54da4372d932dc57!8m2!3d22.6635629!4d88.3458285' class='map'></iframe></div><label class='add'><address>73 Joy Krishna Street<br>Uttarpara, Hooghly-712258<br>Kolkata, West Bengal, INDIA</address>";
+var contactString = "<div class='social'> <a target='_blank' href='tel:+919832219955'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'>9832219955</label></div> </a> <a href='mailto:ankurchanda198@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Ankurac7'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/9434312967'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/ankur_ac7'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://www.instagram.com/ankur_ac7/'> <div class='socialItem'><img class='socialItemI' src='images/instagram.svg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/ankur-chanda-20759621a/' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='images/linkedin.svg' alt=''></div> </a> </div>";
+
+var resumeString = "<img src='images/AnkurChanda'sResume.png' class='AnkurChanda'sResume'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Ankur Chanda's Resume.pdf</label></div><a href='assets/Ankur Chanda's Resume.pdf' download='Ankur_Chanda's_Resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
+var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/place/31,+31,+S+Park+Rd,+Chittaranjan+Colony+6,+Baghajatin+Colony,+Kolkata,+West+Bengal+742306/@22.490264,88.378914,21z/data=!4m6!3m5!1s0x3a027115b0ca2e6f:0x34baf91a88e92b69!8m2!3d22.4901983!4d88.3788722!16s%2Fg%2F11hmyxgmwm?entry=ttu' class='map'></iframe></div><label class='add'><address>32 South Road<br>Santoshpur, Kolkata-700075<br>Kolkata, West Bengal, INDIA</address>";
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -64,7 +65,7 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there,<br><br>My name is <span class='bold'><a class='alink'>Debayudh Mitra</a>.</span><br><br>I am a Computer Science Engineering student at <span class='bold'>Institute of Engineering & Management Kolkata.</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'hello'</span> to know more about me.<br>");
+                sendTextMessage("Hello there,<br><br>My name is <span class='bold'><a class='alink'>Ankur Chanda</a>.</span><br><br>I am a Computer Science Engineering student at <span class='bold'>Institute of Engineering and Management, Kolkata.</span><br><br>I'm enthusiastic about exploring career prospects in the field of Data Science and Machine Learning. I'm keen to engage in discussions regarding job opportunities in this domain.<br><br>Send <span class='bold'>'hello'</span> to know more about me.<br>");
             }, 2000);
             break;
         case "hello":
@@ -74,10 +75,10 @@ function waitAndResponce(inputText) {
             sendTextMessage(resumeString);
             break;
         case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing B.Tech degree in Computer Science Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Python<br>Java<br>C++<br>SQL<br></span><br><br>I've experiance with following frameworks :<span class='bold'><br>Jupyter<br>Numpy<br>Pandas<br>Plotly</span><br><br>I use <span class='bold'>Windows 11</span> as daily driver on my HP Laptop 14s<br>OS: Windows<br>Favourite IDE: VSCode, Anaconda, Google Colab</span>");
+            sendTextMessage("<span class='sk'>I am currently pursuing B.Tech degree in Computer Science and Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Python<br>Java<br>MATLAB<br>SQL<br></span><br><br>I've experiance with following frameworks :<span class='bold'><br>Jupyter<br>Numpy<br>Pandas<br>Plotly</span><br><br>I use <span class='bold'>Windows 11</span> as daily driver on my HP Laptop 14s<br>OS: Windows<br>Favourite IDE: VSCode, Google Colab</span>");
             break;
         case "education":
-            sendTextMessage("I am currently pusuing B.Tech degree in Computer Science Engineering from Institute of Engineering & Management Kolkata<br>Passing Year: 2024<br><br>I have completed my Higher Secondary School from Pearls Of God School Hindmotor<br>Passing Year: 2020<br><br>I have completed my Secondary School from Pearls Of God School Hindmotor<br>Passing Year: 2018");
+            sendTextMessage("I am currently pusuing B.Tech degree in Computer Science and Engineering from Institute of Engineering and Management, Kolkata<br>Passing Year: 2025<br><br>I have completed my Higher Secondary School from Kendriya Vidyalaya Ballygunge<br>Passing Year: 2021<br><br>I have completed my Secondary School from Kendriya Vidyalaya Ballygunge<br>Passing Year: 2019");
             break;
         case "address":
             sendTextMessage(addressString);
@@ -86,13 +87,13 @@ function waitAndResponce(inputText) {
             clearChat();
             break;
         case "about":
-            sendTextMessage("This portfolio website is built using HTML, CSS and JavaScript from SCRATCH!<br><br>Designed and Developed by <a class='alink' target='_blank' href='https:\/\/instagram.com/deba_mitr/'><span class='bold'>Debayudh Mitra</a></span>");
+            sendTextMessage("This portfolio website is built using HTML, CSS and JavaScript from SCRATCH!<br><br>Designed and Developed by <a class='alink' target='_blank' href='https:\/\/instagram.com/ankur_ac7/'><span class='bold'>Ankur Chanda</a></span>");
             break;
         case "contact":
             sendTextMessage(contactString);
             break;
         case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/debamitr1012'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
+            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/Ankurac7'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
             break;
         case "new":
             sendTextMessage(addressString);
